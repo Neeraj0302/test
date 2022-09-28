@@ -1,6 +1,6 @@
 <?php
 \Magento\Framework\Component\ComponentRegistrar::register(
 	 \Magento\Framework\Component\ComponentRegistrar::MODULE,
-	'Ksolves_Neeraj',
+	'Neeraj_Demo',
 	__DIR__
 );
