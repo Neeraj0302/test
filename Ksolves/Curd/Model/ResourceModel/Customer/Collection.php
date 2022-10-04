@@ -15,7 +15,7 @@ class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\Ab
 	 */
 	protected function _construct()
 	{
-		$this->_init('Ksolves\Curd\Model\Customer', 'Dolphin\Curd\Model\ResourceModel\Customer');
+		$this->_init('Ksolves\Curd\Model\Customer', 'Ksolves\Curd\Model\ResourceModel\Customer');
 	}
 
 }

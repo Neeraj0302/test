@@ -5,7 +5,7 @@ namespace Ksolves\Curd\Model;
 use Magento\Framework\Model\AbstractModel;
 use Ksolves\Curd\Model\ResourceModel\Customer as CustomerResourceModel;
 
-class Contact extends AbstractModel
+class Customer extends AbstractModel
 {
    
     protected function _construct()

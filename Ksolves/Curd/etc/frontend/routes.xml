@@ -2,7 +2,7 @@
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="standard">
-        <route id="Curd" frontName="Curd">
+        <route id="curd" frontName="curd">
             <module name="Ksolves_Curd" />
         </route>
     </router>
