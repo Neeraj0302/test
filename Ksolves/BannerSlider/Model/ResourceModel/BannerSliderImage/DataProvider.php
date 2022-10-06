@@ -35,3 +35,4 @@ class DataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
         return [];
     }
 }
+

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ksolves\Curd\Model\ResourceModel\BannerSliderImage;
+namespace Ksolves\BannerSlider\Model\ResourceModel\BannerSliderImage;
 
 class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
 {

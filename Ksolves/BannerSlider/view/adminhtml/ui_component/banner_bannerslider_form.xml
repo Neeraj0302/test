@@ -19,6 +19,7 @@
             </item>
         </item>
     </argument>
+    
     <dataSource name="ksolves_bannerslider_form_data_source">
         <argument name="dataProvider" xsi:type="configurableObject">
             <argument name="class" xsi:type="string">Ksolves\BannerSlider\Model\ResourceModel\BannerSlider\DataProvider</argument>
@@ -61,7 +62,7 @@
                     <item name="dataType" xsi:type="string">text</item>
                     <item name="label" xsi:type="string" translate="true">Name</item>
                     <item name="formElement" xsi:type="string">input</item>
-                    <item name="source" xsi:type="string">employee</item>
+                    <item name="source" xsi:type="string">BannerSlider</item>
                     <item name="dataScope" xsi:type="string">name</item>
                 </item>
             </argument>

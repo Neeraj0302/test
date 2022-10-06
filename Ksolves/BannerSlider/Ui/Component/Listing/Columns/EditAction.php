@@ -6,7 +6,7 @@ use Magento\Framework\View\Element\UiComponentFactory;
 use Magento\Ui\Component\Listing\Columns\Column;
 use Magento\Framework\UrlInterface;
 
-class EditActions extends Column
+class EditAction extends Column
 {
     /**
      * @var UrlInterface
@@ -19,9 +19,9 @@ class EditActions extends Column
     public function __construct(
         ContextInterface $context,
         UiComponentFactory $uiComponentFactory,
-        array $components = array(),
         UrlInterface $urlBuilder,
-        array $data = array()) 
+        array $data = array(),
+        array $components = array())
     {
         parent::__construct($context, $uiComponentFactory, $components, $data);
         $this->urlBuilder = $urlBuilder;
@@ -39,7 +39,7 @@ class EditActions extends Column
             foreach ($dataSource['data']['items'] as & $item) {
                 $name = $this->getData('name');                
                 if (isset($item['id'])) {                    
-                    $item[$name] = html_entity_decode('<a href="'.$this->urlBuilder->getUrl(self::PRODUCT_URL_PATH_EDIT, ['id' => $item['id']]).'">'.'Edit'.'</a>');
+                    $item[$name] = html_entity_decode('<a href="'.$this->urlBuilder->getUrl(self::PRODUCT_URL_PATH_EDIT, ['id' => $item['id']]).'">'."Edit".'</a>');
                 }
             }
         }

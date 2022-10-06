@@ -22,8 +22,8 @@ class Save extends \Magento\Framework\App\Action\Action
           if ($this->getRequest()->isPost()) {
                $input = $this->getRequest()->getPostValue();
                $postData = $this->_customerFactory->create();
-               if (isset($input['editId'])) {
-                    $id = $input['editId'];
+               if (isset($input['path'])) {
+                    $id = $input['path'];
                } else {
                     $id = 0;
                }
