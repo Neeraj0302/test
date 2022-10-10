@@ -32,7 +32,31 @@ class DataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
      */
     public function getData()
     {
-        return [];
+
+        // $items = $this->collection->getData();
+        // echo "<pre>";
+        // var_dump($items);
+        // exit();
+
+        // return ['items' =>[
+        //     'banner_id' => 1,
+        //     'path' => '']];
+
+        // return $items('banner_id' , 'path');
+
+        if (isset($this->loadedData)) {
+            return $this->loadedData;
+        }
+        $items = $this->collection->getItems();
+        foreach ($items as $model) {
+            $this->loadedData[$model->getId()] = $model->getData();
+        }
+        return $this->loadedData;
+
+
+       
+
     }
 }
+
 

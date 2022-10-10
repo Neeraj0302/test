@@ -1,5 +1,5 @@
 <?php
-namespace ksolves\BannerSlider\Controller\Adminhtml\BannerImage;
+namespace Ksolves\BannerSlider\Controller\Adminhtml\BannerImage;
  
 
 class Edit extends \Magento\Framework\App\Action\Action
