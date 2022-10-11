@@ -9,9 +9,25 @@
            foreach($collectionData as $collection):
         ?>
 
-        <div>
-            <img src=" <?php echo $collection->getPath(); ?>" width="400" 
+        <!-- <style>  
+        div {  
+        border: 2px solid red;  
+        }  
+        img{  
+        height: 300px;  
+        width: 300px;  
+        }  
+        #center {  
+        text-align: center;  
+        }  
+        </style>  
+         -->
+        <div id ="center">
+            
+            <img src=" <?php echo $collection->getPath(); ?>"  alt="centered image"  width="400" 
      height="500" />
+
+
         </div>
 
        <?php endforeach; ?>
@@ -34,3 +50,28 @@
     </section>
 </body>
 </html>
+
+<table>
+       
+       <tr>
+           <th scope="col" class="col title">ID</th>
+           <th scope="col" class="col title">Path</th>
+           
+           
+       </tr>
+       <?php
+           $collectionData = $block->getCollection();
+        //    var_dump($collectionData);
+        //    exit();
+           foreach($collectionData as $collection):
+       ?>
+       <tr>
+           <td data-th="ID" ><?php echo $collection->getId(); ?></td>
+           <td data-th="Path" ><img src="<?php echo $collection->getPath(); ?>" width="40" 
+     height="50" ></td>
+           
+       </tr>
+           
+       <?php endforeach; ?>
+        
+   </table>
